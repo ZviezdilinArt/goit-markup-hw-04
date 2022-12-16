@@ -298,7 +298,6 @@ img {
 }
 
 .team-job-title {
-    padding-bottom: 32px;
     margin: 8px;
     color: var(--secondary-text-color);
 }
@@ -310,6 +309,7 @@ img {
     justify-content: center;
     column-gap: 24px;
     padding: 4px 0;
+    margin-bottom: 32px;
     list-style-type: none;
 }
 
@@ -319,6 +319,8 @@ img {
     align-items: center;
     justify-content: center;
     border-radius: 50%;
+    width: 40px;
+    height: 40px;
 }
 
 .team-icon {
