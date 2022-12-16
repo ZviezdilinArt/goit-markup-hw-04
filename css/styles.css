@@ -9,7 +9,7 @@
     --footer-logo-color: #F4F4FD;
     --footer-text-color: #E7E9FC;
     --footer-icons-color: rgba(255, 255, 255, 0.1);
-    --footer_icons-hover: #31D0AA;
+    --footer-icons-hover: #31D0AA;
     --border-color:#E7E9FC;
     --border-secondary-color: #F4F4FD;
     --brand-color: #4D5AE5;
@@ -553,7 +553,7 @@ img {
 
 .footer-soc-link:hover,
 .footer-soc-link:focus {
-    background-color: var(--footer_icons-hover);
+    background-color: var(--footer-icons-hover);
 }
 
 .footer-icon {
