@@ -10,6 +10,7 @@
     --footer-text-color: #E7E9FC;
     --border-color:#E7E9FC;
     --brand-color: #4D5AE5;
+    --brand-hover-color: #404BBF;
     --border-icons-color: #8E8F99;
     --icon-color: #AFB1B8;
     --border-radius: 4px;
@@ -110,7 +111,7 @@ img {
 
 .navigation-list-item:hover,
 .navigation-list-item:focus {
-    color: var(--brand-color);
+    color: var(--brand-hover-color);
 }
 
 /* .navigation-item:visited {
@@ -134,7 +135,7 @@ img {
 
 .contacts-item:hover,
 .contacts-item:focus {
-    color: var(--brand-color);
+    color: var(--brand-hover-color);
 }
 
 .contacts + .contacts {
@@ -178,6 +179,11 @@ img {
     letter-spacing: 0.04em;
 }
 
+.hero-button:hover,
+.hero-button:focus {
+    background-color: var(--brand-hover-color);
+}
+
 .button-text {
     display: inline-block;
     padding: 16px 32px;
@@ -188,19 +194,27 @@ img {
 
 .features-list {
     display: flex;
-
+    column-gap: 24px;
     list-style-type: none;
 
 }
 
-.features-list-item + .features-list-item {
-    margin-left: 24px;
+.features-list-item {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.future-list-icon {
+    display: block;
+    width: 264px;
+    border-radius: 4px;
+    padding: 24px 100px;
+    background-color: var(--secondary-bgn-color);
 }
 
 
 .features-title {
-    margin-bottom: 8px;
-
     font-weight: var(--font-weight-primary);
     font-size: var(--font-size-secondary);
     line-height: 1.2;
@@ -317,25 +331,26 @@ img {
     border: 1px solid var(--border-icons-color);
     border-radius: 4px;
     background-color: var(--white-bgn-color);
-    
 }
+
+
 
 .costumer-list-item:hover,
 .costumer-list-item:focus {
-    border-color: var(--brand-color);
+    border-color: var(--brand-hover-color);
 }
 
 
 .costumer-list-icon {
     display: flex;
     align-items: center;
-    
+    fill: var(--icon-color);
 
 }
 
 .costumer-list-icon:hover,
 .costumer-list-icon:focus {
-    fill: var(--brand-color);
+    fill: var(--brand-hover-color);
 }
 
 
@@ -373,8 +388,8 @@ img {
 .portfolio-button:hover,
 .portfolio-button:focus {
     color: var(--white-text-color);
-    background-color: var(--brand-color);
-    border-color: var(--brand-color);
+    background-color: var(--brand-hover-color);
+    border-color: var(--brand-hover-color);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
