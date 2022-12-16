@@ -8,7 +8,10 @@
     --footer-bgn-color: #2E2F42;
     --footer-logo-color: #F4F4FD;
     --footer-text-color: #E7E9FC;
+    --footer-icons-color: rgba(255, 255, 255, 0.1);
+    --footer_icons-hover: #31D0AA;
     --border-color:#E7E9FC;
+    --border-secondary-color: #F4F4FD;
     --brand-color: #4D5AE5;
     --brand-hover-color: #404BBF;
     --border-icons-color: #8E8F99;
@@ -183,6 +186,7 @@ img {
 .hero-button:hover,
 .hero-button:focus {
     background-color: var(--brand-hover-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 .button-text {
@@ -239,6 +243,11 @@ img {
 .work-list {
     display: flex;
     list-style-type: none;
+}
+
+.work-list-item {
+    border: 1px solid #E7E9FC;
+    background: linear-gradient(0deg, rgba(77, 90, 229, 0.1), rgba(77, 90, 229, 0.1))
 }
 
 .work-list-item + .work-list-item {
@@ -321,6 +330,11 @@ img {
     border-radius: 50%;
     width: 40px;
     height: 40px;
+}
+
+.team-soc-link:hover,
+.team-soc-link:focus {
+    background-color: var(--brand-hover-color);
 }
 
 .team-icon {
@@ -438,11 +452,19 @@ img {
     display: block;
 
     text-decoration: none;
+}
+
+.portfolio-item-card:hover,
+.portfolio-item-card:focus {
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
+.portfolio-item-img {
+    background: linear-gradient(0deg, rgba(77, 90, 229, 0.1), rgba(77, 90, 229, 0.1))
+}
+
 .portfolio-item-text {
-    border: 0.5px solid #F4F4FD;
+    border: 0.5px solid var(--border-secondary-color);
     border-top: transparent;
     padding-top: 32px;
     padding-bottom: 32px;
@@ -470,6 +492,14 @@ img {
     background-color: var(--footer-bgn-color);
 }
 
+.footer-section {
+    display: flex;
+    align-items: center;
+}
+
+.footer-block {
+    margin-right: 120px;
+}
 
 .footer-logo, .footer-logo-web {
     color: var(--footer-logo-color);
@@ -490,4 +520,42 @@ img {
     margin-top: 16px;
     width: 264px;
     color: var(--footer-text-color);
+}
+
+
+.footer-social-title {
+    color: var(--white-text-color);
+    font-weight: 600;
+    line-height: 1.5em;
+    font-size: 16px;
+    margin-bottom: 16px;
+}
+
+.footer-soc-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 16px;
+    padding: 4px 0;
+    margin-bottom: 32px;
+    list-style-type: none;
+}
+
+.footer-soc-link {
+    background-color: var(--footer-icons-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+.footer-soc-link:hover,
+.footer-soc-link:focus {
+    background-color: var(--footer_icons-hover);
+}
+
+.footer-icon {
+    fill: var(--secondary-icon-color);
 }
