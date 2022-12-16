@@ -13,6 +13,7 @@
     --brand-hover-color: #404BBF;
     --border-icons-color: #8E8F99;
     --icon-color: #AFB1B8;
+    --secondary-icon-color: #F4F4FD;
     --border-radius: 4px;
     --line-height-text: 1.5;
     --font-weight-primary: 600;
@@ -298,7 +299,30 @@ img {
 
 .team-job-title {
     padding-bottom: 32px;
+    margin: 8px;
     color: var(--secondary-text-color);
+}
+
+
+.team-soc-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 24px;
+    padding: 4px 0;
+    list-style-type: none;
+}
+
+.team-soc-link {
+    background-color: var(--brand-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.team-icon {
+    fill: var(--secondary-icon-color);
 }
 
 /* Costumers */
